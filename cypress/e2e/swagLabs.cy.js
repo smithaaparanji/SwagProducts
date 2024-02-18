@@ -18,5 +18,8 @@ describe('Swag lab tests', () => {
     productsPage.verifyProductsPage();
     productsPage.addProductToCart(productData.productName);
     productsPage.proceedToCheckout();
+    productsPage.fillInpersonalInfo(productData.personalInfo);
+    productsPage.finishCheckout(productData);
+    productsPage.verifyOrder();
   })
 })

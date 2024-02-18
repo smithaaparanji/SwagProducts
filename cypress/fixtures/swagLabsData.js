@@ -1,18 +1,17 @@
-export const swagLabsData = {
-  loginPageTitle : 'Swag Labs',
-  productsTitle : 'Products',
-  addToCartButton : 'Add to cart',
-  backToProducts : 'Back to products',
-  remove : 'Remove',
-  yourCart : 'Your Cart',
-  continue : 'Continue Shopping',
-  checkout : 'Checkout'
-}
-
 export const productData = {
   productName : 'Sauce Labs Onesie',
   productPrice : '$7.99',
   quantity : 1,
- 
+  personalInfo : {
+    firstName : 'Test',
+    lastName : 'Automation',
+    zip : '2000'
+  },
+  checkoutInfo:{
+    paymentInfo : 'SauceCard #',
+    shippingInfo : 'Free Pony Express Delivery!',
+    itemTotal : 7.99,
+    tax : 0.64
+  }
 }
 

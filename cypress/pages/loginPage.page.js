@@ -1,9 +1,7 @@
-import {swagLabsData} from '../fixtures';
-
 export class LoginPage{
-
-
-
+    constructor(){
+        this.loginPageTitle =  'Swag Labs';
+    }
 getPageTitle(){
 return cy.get('.login_logo');
 }
@@ -21,8 +19,8 @@ getLoginButton(){
 }
 
 loginToSwagLabs(username,password){
-cy.visit('https://www.saucedemo.com');
-this.getPageTitle().should('have.text',swagLabsData.loginPageTitle);
+cy.visit(Cypress.env('baseURL'));
+this.getPageTitle().should('have.text',this.loginPageTitle);
 this.getUserName().clear().type(username);
 this.getPassword().clear().type(password);
 this.getLoginButton().click()
