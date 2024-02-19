@@ -1,3 +1,4 @@
+//Data for automating swag labs
 export const productData = {
   productName : 'Sauce Labs Onesie',
   productPrice : '$7.99',
